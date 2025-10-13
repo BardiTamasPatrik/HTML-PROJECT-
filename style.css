@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-image: url(háttér.jpg) ;
+    color: #333;
+}
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+h1 {
+    color: #0056b3;
+}
+section {
+    margin-bottom: 25px;
+    background-image:url(cigi.jpg);
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+video {
+    display: block;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 300px;
+    
+}
+
+li {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+.connect{
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
