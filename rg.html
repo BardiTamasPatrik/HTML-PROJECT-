@@ -3,36 +3,183 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
     <title>Az alkohol és hatásai</title>
-
 </head>
-<body>
-    <header>
+<body class="bg-light">
+    <header class="bg-primary text-white text-center py-4">
         <h1>Az alkohol és hatásai</h1>
     </header>
-    <div class="content">
-        <div class="text">
-            <section>
-                <h2>Mi az alkohol?</h2>
-                <p>Az alkohol, vagyis etanol, egy pszichoaktív szer, amelyet leggyakrabban ital formájában fogyasztanak. Károsíthatja az emberi szervezetet, különösen nagyobb mennyiségben vagy rendszeres használat esetén.</p>
-            </section>
-            <section>
-                <h2>Hatásai a szervezetre</h2>
-                <ul>
-                    <li>Gyorsítja a véráramlást, nyugtató hatású.</li>
-                    <li>Csökkenti az ítélőképességet, koordinációt rontja.</li>
-                    <li>Hosszú távon károsíthatja a májat és az idegrendszert.</li>
-                    <li>Függőség kialakulásához vezethet.</li>
-                </ul>
-            </section>
-            # Ez a komment egy régebbi verzióból van, még mielőtt felraktuk volna erra a gyászos oldalra. De annyiból ált ez a komment hogy felajánlottam hogy rakjunk bele videót.
-            <video controls>
-                <source src="alk hatása.mp4" type="video/mp4" />
-                Az ön böngészője nem támogatja a videó lejátszását.
-            </video>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="text">
+                    <section class="mb-4">
+                        <h2>Mi az alkohol?</h2>
+                        <p>Az alkohol, vagyis etanol, egy pszichoaktív szer, amelyet leggyakrabban ital formájában fogyasztanak. Károsíthatja az emberi szervezetet, különösen nagyobb mennyiségben vagy rendszeres használat esetén.</p>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Hatásai a szervezetre</h2>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Gyorsítja a véráramlást, nyugtató hatású.</li>
+                            <li class="list-group-item">Csökkenti az ítélőképességet, koordinációt rontja.</li>
+                            <li class="list-group-item">Hosszú távon károsíthatja a májat és az idegrendszert.</li>
+                            <li class="list-group-item">Függőség kialakulásához vezethet.</li>
+                        </ul>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Tudtad-e?</h2>
+                        <p id="fact">Kattints a gombra egy érdekes tényért!</p>
+                        <button id="factBtn" class="btn btn-info">Mutass egy tényt</button>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Alkoholtípusok</h2>
+                        <div class="accordion" id="alcoholTypes">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Sör
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#alcoholTypes">
+                                    <div class="accordion-body">
+                                        A sör alacsonyabb alkoholtartalmú ital, általában 4-6% közötti. Gyakran fogyasztják társasági összejöveteleken.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Bor
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#alcoholTypes">
+                                    <div class="accordion-body">
+                                        A bor magasabb alkoholtartalmú, 10-15% körül. Vörösborban található antioxidánsok, de mértékletes fogyasztás ajánlott.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Pálinka és szeszes italok
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#alcoholTypes">
+                                    <div class="accordion-body">
+                                        Magas alkoholtartalmú italok, akár 40% felett. Gyorsabban vezetnek részegséghez és függőséghez.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Hosszú távú hatások</h2>
+                        <p>Az alkohol rendszeres fogyasztása súlyos egészségügyi problémákhoz vezethet:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Májzsugor és májrák kockázata nő.</li>
+                            <li class="list-group-item">Szív- és érrendszeri betegségek kialakulása.</li>
+                            <li class="list-group-item">Idegrendszer károsodása, memóriazavarok.</li>
+                            <li class="list-group-item">Pszichés problémák, depresszió.</li>
+                        </ul>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Megelőzés és tanácsok</h2>
+                        <p>Az alkohol káros hatásait csökkenthetjük tudatos fogyasztással:</p>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Ne igyál üres gyomorra.</li>
+                            <li class="list-group-item">Váltogasd az alkoholos italokat vízzel.</li>
+                            <li class="list-group-item">Tudd, mikor mondj nemet.</li>
+                            <li class="list-group-item">Ha problémád van, kérj segítséget szakembertől.</li>
+                        </ul>
+                    </section>
+                    <section class="mb-4">
+                        <h2>Alkoholfogyasztás kalkulátor</h2>
+                        <p>Számold ki, mennyi alkoholt fogyasztottál!</p>
+                        <div class="mb-3">
+                            <label for="drinkType" class="form-label">Ital típusa</label>
+                            <select class="form-select" id="drinkType">
+                                <option value="0.33">Sör (0.33l)</option>
+                                <option value="0.15">Bor (1.5dl)</option>
+                                <option value="0.04">Pálinka (4cl)</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="quantity" class="form-label">Mennyiség (darab)</label>
+                            <input type="number" class="form-control" id="quantity" min="1" value="1">
+                        </div>
+                        <button id="calcBtn" class="btn btn-warning">Számold ki</button>
+                        <p id="calcResult" class="mt-3"></p>
+                    </section>
+                    <video controls class="w-100 mb-4">
+                        <source src="alk hatása.mp4" type="video/mp4" />
+                        Az ön böngészője nem támogatja a videó lejátszását.
+                    </video>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Kvíz: Alkohol tudás</h5>
+                        <p class="card-text">Teszteld tudásodat az alkoholról!</p>
+                        <button id="quizBtn" class="btn btn-success">Indítsd a kvízt</button>
+                        <div id="quiz" class="mt-3" style="display: none;">
+                            <p id="question"></p>
+                            <button class="btn btn-outline-primary me-2" onclick="answer(true)">Igen</button>
+                            <button class="btn btn-outline-danger" onclick="answer(false)">Nem</button>
+                            <p id="result" class="mt-2"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const facts = [
+            "Egy pohár bor körülbelül 1-2 órát vesz igénybe a szervezet lebontásához.",
+            "Az alkohol befolyásolja az agy kommunikációs folyamatait.",
+            "A rendszeres ivás növeli a szívbetegségek kockázatát."
+        ];
+        let currentFact = 0;
+        document.getElementById('factBtn').addEventListener('click', function() {
+            document.getElementById('fact').textContent = facts[currentFact];
+            currentFact = (currentFact + 1) % facts.length;
+        });
+
+        const questions = [
+            { q: "Az alkohol növeli az ítélőképességet?", a: false },
+            { q: "Az alkohol függőséget okozhat?", a: true },
+            { q: "Az alkohol jót tesz a májnak?", a: false }
+        ];
+        let currentQuestion = 0;
+        document.getElementById('quizBtn').addEventListener('click', function() {
+            document.getElementById('quiz').style.display = 'block';
+            showQuestion();
+        });
+        function showQuestion() {
+            document.getElementById('question').textContent = questions[currentQuestion].q;
+            document.getElementById('result').textContent = '';
+        }
+        function answer(ans) {
+            const correct = questions[currentQuestion].a;
+            document.getElementById('result').textContent = ans === correct ? 'Helyes!' : 'Helytelen!';
+            currentQuestion = (currentQuestion + 1) % questions.length;
+            setTimeout(showQuestion, 2000);
+        }
+
+        // Alkoholfogyasztás kalkulátor
+        document.getElementById('calcBtn').addEventListener('click', function() {
+            const drinkType = parseFloat(document.getElementById('drinkType').value);
+            const quantity = parseInt(document.getElementById('quantity').value);
+            const totalAlcohol = (drinkType * quantity * 1000).toFixed(2); // ml-ben
+            document.getElementById('calcResult').textContent = `Összesen körülbelül ${totalAlcohol} ml tiszta alkohol.`;
+        });
+    </script>
         </div>
     </div>
 </body>
 
 </html>
+
